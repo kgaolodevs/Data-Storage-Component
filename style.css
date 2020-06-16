@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primary-color: #25242a;
+  --dark-blue: hsl(228, 56%, 26%);
   --primary-white: #fff;
 }
 
@@ -24,14 +24,16 @@ body {
     padding: 9rem 1.5rem;
   }
   .background .card {
-    border: crimson 0.1rem solid;
+    background-color: var(--dark-blue);
+    border-radius: 0.6rem;
   }
   .background .card__top {
     height: 11rem;
     margin-bottom: 1rem;
+    border-top-right-radius: 6rem;
   }
   .background .card__bottom {
-    height: 7.5rem;
+    height: 8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
