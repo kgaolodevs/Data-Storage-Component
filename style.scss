@@ -2,20 +2,37 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Raleway;
 }
 
 :root {
   --primary-color: #25242a;
+  --primary-white: #fff;
 }
 
 body {
   height: 100vh;
   width: 100vw;
+  color: var(--primary-white);
 }
 
 @media only screen and (max-width: 375px) {
   .background {
     height: 100vh;
     background: url(./images/bg-mobile.svg);
+    padding: 9rem 1.5rem;
+
+    .card {
+      border: crimson 0.1rem solid;
+
+      &__top {
+        height: 11rem;
+        margin-bottom: 1rem;
+      }
+
+      &__bottom {
+        height: 7.5rem;
+      }
+    }
   }
 }

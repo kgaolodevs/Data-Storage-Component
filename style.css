@@ -3,21 +3,35 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Raleway;
 }
 
 :root {
   --primary-color: #25242a;
+  --primary-white: #fff;
 }
 
 body {
   height: 100vh;
   width: 100vw;
+  color: var(--primary-white);
 }
 
 @media only screen and (max-width: 375px) {
   .background {
     height: 100vh;
     background: url(./images/bg-mobile.svg);
+    padding: 9rem 1.5rem;
+  }
+  .background .card {
+    border: crimson 0.1rem solid;
+  }
+  .background .card__top {
+    height: 11rem;
+    margin-bottom: 1rem;
+  }
+  .background .card__bottom {
+    height: 7.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
