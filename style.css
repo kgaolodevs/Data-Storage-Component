@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #25242a;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 375px) {
+  .background {
+    height: 100vh;
+    background: url(./images/bg-mobile.svg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
