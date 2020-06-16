@@ -7,6 +7,7 @@
 
 :root {
   --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
   --primary-white: #fff;
 }
 
@@ -30,6 +31,24 @@ body {
         height: 11rem;
         margin-bottom: 1rem;
         border-top-right-radius: 6rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--icons {
+          display: flex;
+          align-items: center;
+
+          &--icon {
+            margin: 0 0.5rem;
+            background-color: var(--very-dark-blue);
+            padding: 0.6rem;
+            border-radius: 0.5rem;
+            // height: 3rem;
+            // width: 3rem;
+          }
+        }
       }
 
       &__bottom {

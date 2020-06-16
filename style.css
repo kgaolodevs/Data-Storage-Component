@@ -8,6 +8,7 @@
 
 :root {
   --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
   --primary-white: #fff;
 }
 
@@ -31,6 +32,31 @@ body {
     height: 11rem;
     margin-bottom: 1rem;
     border-top-right-radius: 6rem;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .background .card__top--icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .background .card__top--icons--icon {
+    margin: 0 0.5rem;
+    background-color: var(--very-dark-blue);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
   }
   .background .card__bottom {
     height: 8rem;
