@@ -10,6 +10,7 @@
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
   --primary-white: #fff;
+  --gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
 }
 
 body {
@@ -60,7 +61,43 @@ body {
     border-radius: 0.5rem;
   }
   .background .card__bottom {
-    height: 8rem;
+    height: 8.5rem;
+    padding: 2rem;
+  }
+  .background .card__bottom--heading {
+    text-align: center;
+  }
+  .background .card__bottom--bar--back {
+    width: 100%;
+    height: 1.15rem;
+    background-color: var(--very-dark-blue);
+    margin: 0.8rem 0 0.5rem 0;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.1rem;
+  }
+  .background .card__bottom--bar--load {
+    width: 80%;
+    height: 85%;
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient)));
+    background-image: linear-gradient(to right, var(--gradient));
+  }
+  .background .card__bottom--subtext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=style.css.map */
