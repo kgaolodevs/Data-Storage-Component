@@ -9,6 +9,7 @@
 :root {
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
+  --grayish-blue: hsl(229, 7%, 55%);
   --primary-white: #fff;
   --gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
 }
@@ -23,7 +24,8 @@ body {
 @media only screen and (max-width: 375px) {
   .background {
     height: 100vh;
-    background: url(./images/bg-mobile.svg);
+    background: url(./images/bg-mobile.svg) no-repeat;
+    background-size: cover;
     padding: 9rem 1.5rem;
   }
   .background .card {
@@ -113,6 +115,168 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .background .card__bottom--alt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: var(--primary-white);
+    color: var(--very-dark-blue);
+    border-radius: 0.6rem;
+    width: 10rem;
+    height: 4rem;
+    margin: -1rem auto;
+  }
+  .background .card__bottom--alt--number {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .background .card__bottom--alt--text {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--grayish-blue);
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  .background {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--very-dark-blue);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    padding: 9rem 1.5rem;
+  }
+  .background .card {
+    background-color: var(--dark-blue);
+    border-radius: 0.6rem;
+  }
+  .background .card__top {
+    height: 11rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    border-top-right-radius: 6rem;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .background .card__top--icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .background .card__top--icons--icon {
+    margin: 0 0.5rem;
+    background-color: var(--very-dark-blue);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+  }
+  .background .card__bottom {
+    height: 8.5rem;
+    padding: 2rem;
+  }
+  .background .card__bottom--heading {
+    text-align: center;
+  }
+  .background .card__bottom--bar--back {
+    width: 100%;
+    height: 1.15rem;
+    background-color: var(--very-dark-blue);
+    margin: 0.8rem 0 0.5rem 0;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.1rem;
+  }
+  .background .card__bottom--bar--load {
+    width: 80%;
+    height: 85%;
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient)));
+    background-image: linear-gradient(to right, var(--gradient));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0.1rem 0.15rem;
+  }
+  .background .card__bottom--bar--round {
+    width: 0.6rem;
+    height: 90%;
+    background-color: var(--primary-white);
+    border-radius: 100%;
+  }
+  .background .card__bottom--subtext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .background .card__bottom--alt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: var(--primary-white);
+    color: var(--very-dark-blue);
+    border-radius: 0.6rem;
+    width: 10rem;
+    height: 4rem;
+    margin: -1rem auto;
+  }
+  .background .card__bottom--alt--number {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .background .card__bottom--alt--text {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--grayish-blue);
   }
 }
 /*# sourceMappingURL=style.css.map */
