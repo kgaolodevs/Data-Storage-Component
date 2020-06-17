@@ -86,10 +86,25 @@ body {
     height: 85%;
     background-color: var(--dark-blue);
     border-radius: 1rem;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient)));
     background-image: linear-gradient(to right, var(--gradient));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0.1rem 0.15rem;
+  }
+  .background .card__bottom--bar--round {
+    width: 0.6rem;
+    height: 90%;
+    background-color: var(--primary-white);
+    border-radius: 100%;
   }
   .background .card__bottom--subtext {
     display: -webkit-box;
