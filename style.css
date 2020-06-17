@@ -157,7 +157,15 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
-    padding: 9rem 1.5rem;
+    padding: 9rem 1.5rem 16rem 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .background .card {
     background-color: var(--dark-blue);
@@ -196,6 +204,7 @@ body {
   }
   .background .card__bottom {
     height: 8.5rem;
+    width: 40rem;
     padding: 2rem;
   }
   .background .card__bottom--heading {
@@ -267,7 +276,6 @@ body {
     border-radius: 0.6rem;
     width: 10rem;
     height: 4rem;
-    margin: -1rem auto;
   }
   .background .card__bottom--alt--number {
     font-size: 2rem;
